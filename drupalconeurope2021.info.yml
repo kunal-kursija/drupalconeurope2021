@@ -1,0 +1,5 @@
+name: 'DrupalCon Europe 2021'
+description: 'Demonstrates PHPUnit Data Providers'
+package: 'DrupalCon'
+type: module
+core_version_requirement: ^8.8 || ^9
