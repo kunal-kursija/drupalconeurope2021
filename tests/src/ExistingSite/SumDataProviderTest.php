@@ -7,12 +7,18 @@ use weitzman\DrupalTestTraits\ExistingSiteBase;
 class SumDataProviderTest extends ExistingSiteBase {
 
   /**
-   * Test Editor Access.
+   * Test Addition
    *
+   * @param int $int1
+   *   Integer 1.
+   * @param int $int2
+   *   Integer 2.
+   * @param int $expected
+   *   Integer 3.
    *
    * @dataProvider numberProvider
    */
-  public function testAddition(int $int1, int $int2, $expected): void {
+  public function testAddition(int $int1, int $int2, int $expected): void {
     $this->assertEquals($expected, $int1 + $int2);
   }
 
