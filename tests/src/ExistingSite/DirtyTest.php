@@ -40,11 +40,11 @@ class DirtyTest extends ExistingSiteBase {
     $this->loggedInUser->addRole('editor');
     $this->loggedInUser->save();
 
-    $this->drupalGet('page_a');
+    $this->drupalGet('editing');
     $this->assertSession()->statusCodeEquals(200);
 
-    $this->drupalGet('page_b');
-    $this->assertSession()->statusCodeNotEquals(200);
+    $this->drupalGet('moderating');
+    $this->assertSession()->statusCodeEquals(403);
   }
 
   /**
@@ -59,10 +59,10 @@ class DirtyTest extends ExistingSiteBase {
     $this->loggedInUser->addRole('moderator');
     $this->loggedInUser->save();
 
-    $this->drupalGet('page_a');
+    $this->drupalGet('editing');
     $this->assertSession()->statusCodeEquals(200);
 
-    $this->drupalGet('page_b');
+    $this->drupalGet('moderating');
     $this->assertSession()->statusCodeEquals(200);
   }
 

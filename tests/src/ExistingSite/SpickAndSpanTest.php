@@ -64,15 +64,15 @@ class SpickAndSpanTest extends ExistingSiteBase {
       [
         'editor',
         [
-          ['url' => 'page_a', 'code' => 200],
-          ['url' => 'page_b', 'code' => 403],
+          ['url' => 'editing', 'code' => 200],
+          ['url' => 'moderating', 'code' => 403],
         ],
       ],
       [
         'moderator',
         [
-          ['url' => 'page_a', 'code' => 200],
-          ['url' => 'page_b', 'code' => 200],
+          ['url' => 'editing', 'code' => 200],
+          ['url' => 'moderating', 'code' => 200],
         ],
       ],
     ];

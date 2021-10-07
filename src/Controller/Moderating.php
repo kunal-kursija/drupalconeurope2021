@@ -5,9 +5,9 @@ namespace Drupal\drupalconeurope2021\Controller;
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Class to return contents of PageA.
+ * Class to return contents of '/Moderating'.
  */
-class PageA extends ControllerBase {
+class Moderating extends ControllerBase {
 
   /**
    * Returns Page Markup.
@@ -17,7 +17,7 @@ class PageA extends ControllerBase {
    */
   public function content(): array {
     return [
-      '#markup' => 'Contents of Page A.',
+      '#markup' => 'Contents of Page "/Moderating".',
     ];
   }
 

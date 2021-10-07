@@ -1,13 +1,13 @@
-drupalconeurope2021.page_a:
-  path: '/page_a'
+drupalconeurope2021.editing:
+  path: '/editing'
   defaults:
-    _controller: '\Drupal\drupalconeurope2021\Controller\PageA::content'
+    _controller: '\Drupal\drupalconeurope2021\Controller\Editing::content'
   requirements:
     _role: 'editor+moderator'
 
-drupalconeurope2021.page_b:
-  path: '/page_b'
+drupalconeurope2021.moderating:
+  path: '/moderating'
   defaults:
-    _controller: '\Drupal\drupalconeurope2021\Controller\PageB::content'
+    _controller: '\Drupal\drupalconeurope2021\Controller\Moderating::content'
   requirements:
     _role: 'moderator'
