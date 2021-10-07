@@ -29,7 +29,7 @@ class SpickAndSpanTest extends ExistingSiteBase {
   }
 
   /**
-   * Test Editor Access.
+   * Test User Access.
    *
    * @param string $role
    *   Role.
